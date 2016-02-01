@@ -48,6 +48,7 @@ public class Main extends HttpServlet {
   }
 
   public static void main(String[] args) throws Exception{
+    Thread.sleep(60000);
     final Thread mainThread = Thread.currentThread();
     Runtime.getRuntime().addShutdownHook(new Thread() {
       public void run() {
