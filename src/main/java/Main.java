@@ -48,7 +48,10 @@ public class Main extends HttpServlet {
   }
 
   public static void main(String[] args) throws Exception{
+    System.out.println("SLEEP: begin");
     Thread.sleep(60000);
+    System.out.println("SLEEP: end");
+
     final Thread mainThread = Thread.currentThread();
     Runtime.getRuntime().addShutdownHook(new Thread() {
       public void run() {
